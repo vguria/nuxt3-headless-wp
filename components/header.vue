@@ -3,16 +3,16 @@
     <header class="w-screen fixed backdrop-blur-lg z-10 bg-white/20 dark:bg-black/20">
       <div class="container px-12 mx-auto py-4 flex justify-between">
         <div class="grow-0">
-          <button class="block" @click="toggleSidenav">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-black dark:text-white hover:text-red-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
+          <button class="block" @click="openSidenav">
+            <Icon name="material-symbols:menu" class="text-black text-6xl dark:text-white"/>
           </button>
         </div>
         <div class="header-main grow-1">
           <NuxtLink to="/">
-            <img class="max-w-[180px]"
-            :src="`${$colorMode.preference == 'dark' ? '/img/logo-white.webp': '/img/logo.webp'}`" alt="Belair Magazine" />
+            <ClientOnly>
+              <img class="max-w-[180px]"
+              :src="`${$colorMode.value == 'dark' ? '/img/logo-white.webp': '/img/logo.webp'}`" alt="Belair Magazine" />
+            </ClientOnly>
           </NuxtLink>
         </div>
         <div class="grow-0">
@@ -44,7 +44,7 @@
 <script setup>
 import { useSidenavState } from '~/composables/sidenavState';
 
-const { isSidenavOpen, toggleSidenav } = useSidenavState();
+const { isSidenavOpen, openSidenav } = useSidenavState();
 </script>
 
 <style scoped>

@@ -16,6 +16,7 @@
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/robots": "^4.1.7",
     "@nuxtjs/tailwindcss": "^6.12.1",
+    "click-outside-vue3": "^4.0.1",
     "nuxt": "^3.13.0",
     "nuxt-aos": "^1.2.5",
     "nuxt-marquee": "^1.0.4",

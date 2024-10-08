@@ -1,10 +1,12 @@
 <template>
   <transition>
     <aside v-show="isSidenavOpen" class="sidenav fixed h-screen bg-gray-100
-     dark:bg-black w-64 px-0 py-0 t0 l0 z-20">
+     dark:bg-black w-64 px-0 py-0 t0 l0 z-20" v-click-outside="closeSidenav">
       <div class="sidenav-header bg-gray-400 dark:bg-gray-800 py-2 px-4 dark:text-white">
-        <img :src="`${$colorMode.preference == 'dark' ? '/img/logo-white-no-tagline.webp': '/img/logo-no-tagline.webp'}`" 
-        alt="BelAir Magazine">
+        <ClientOnly>
+          <img :src="`${$colorMode.preference === 'dark' ? '/img/logo-white-no-tagline.webp': '/img/logo-no-tagline.webp'}`" 
+          alt="BelAir Magazine">
+        </ClientOnly>
       </div>
       <nav id="sidenav-main" class="p-4">
         <h3 class="text-lg font-semibold dark:text-white uppercase mb-2">
@@ -32,10 +34,8 @@
 
 <script setup>
 import { useSidenavState } from '~/composables/sidenavState';
-const { isSidenavOpen, toggleSidenav } = useSidenavState();
-defineProps({
-  isOpen: Boolean,
-})  
+const { isSidenavOpen, closeSidenav } = useSidenavState();
+console.log(isSidenavOpen);
 </script>
 
 <style scoped>

@@ -1,20 +1,15 @@
 <template>
   <div>
-    <div>
-      <button class="text-black text-5xl hover:text-red-800" v-show="$colorMode.preference === 'light'" 
+    <ClientOnly>
+      <button class="text-black" v-show="$colorMode.preference === 'light'" 
       @click="$colorMode.preference = 'dark'">
-        ☾
+      <Icon name="material-symbols:nightlight-outline" class="text-black text-6xl"/>
       </button>
-      <button class="text-white text-5xl hover:text-red-800" v-show="$colorMode.preference === 'dark'"
+      <button class="text-white" v-show="$colorMode.preference === 'dark'"
       @click="$colorMode.preference = 'light'">
-        ☼
+        <Icon name="material-symbols:wb-sunny" class="text-white text-6xl hover:text-red-600"/>
       </button>
-      <button v-show="$colorMode.preference === 'system' ||
-      $colorMode.preference === 'sepia'"
-      @click="$colorMode.preference = 'dark'">
-        Dark
-      </button>
-  </div>    
+  </ClientOnly>    
   </div>
 </template>
 

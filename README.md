@@ -16,21 +16,21 @@ This is a version of BELAIR Magazine created in Nuxt3 using Vue, TailwindCSS, an
   🟢 Layout (Header, footer, main content)
   🟢 Sections and components
   🟢 API data retrieval
-🟢 Route [category/post]
+🟠 Route [category/post]
   🟢 Routing
   🟢 Data retrieval
   🔴 Data sanitization
   🔴 Sidebar
-🔴 Route [category]
+🟠 Route [category]
   🟢 Routing
-  🟢  Data retrieval
+  🟢 Data retrieval
   🔴 Data sanitization
   🔴 Sidebar
 🟠 Off-canvas navigation
   🟢 Basic design and state
   🔴 Close on keyboard input
-  🔴 Close when clicking out of element
-🟢 Voting favorites
+  🟢 Close when clicking out of element
+🟠 Voting favorites
   🟢 Get votes
   🟢 Frontend voting
   🔴 Backend

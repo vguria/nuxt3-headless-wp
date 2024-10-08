@@ -2,8 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: [//'@nuxt/icon',
-  '@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/robots', '@nuxtjs/color-mode', 'nuxt-schema-org', 'nuxt-aos', 'nuxt-marquee', '@nuxtjs/sitemap', '@nuxt/icon', '@nuxt/fonts'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/robots', '@nuxtjs/color-mode', 'nuxt-schema-org', 'nuxt-aos', 'nuxt-marquee', '@nuxtjs/sitemap', '@nuxt/icon', '@nuxt/fonts'],
   runtimeConfig: {
     public: {
       apiBase: "https://belairmagazine.es/wp-json/wp/v2/",
