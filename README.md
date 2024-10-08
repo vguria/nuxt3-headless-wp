@@ -2,6 +2,10 @@
 
 This is a version of BELAIR Magazine created in Nuxt3 using Vue, TailwindCSS, and WordPress + GraphQL as a headless CMS backend. This is a proof of concept / ongoing work so there are many features not ready for production.
 
+## Check Demo:
+
+[Live Demo](https://headless-belair.vguria.com/)
+
 ## Features
 ```
 🟢 SSR compatible
@@ -28,7 +32,7 @@ This is a version of BELAIR Magazine created in Nuxt3 using Vue, TailwindCSS, an
   🔴 Close when clicking out of element
 🟢 Voting favorites
   🟢 Get votes
-  🟢 Frontent voting
+  🟢 Frontend voting
   🔴 Backend
   🔴 Local Storage Persistance
 ```
