@@ -44,7 +44,6 @@ const q = `
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ query: q })
   })
-  console.log(response._rawValue)
   const posts = response._rawValue.data.posts.nodes
 </script>
 

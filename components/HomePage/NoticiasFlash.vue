@@ -58,7 +58,6 @@ const { data: response } = await useFetch(graphql, {
 const posts = response._rawValue.data.posts.nodes
 
 const remainingPosts = computed(() => posts.slice(1))
-console.log(posts)
 </script>
 
 <style scoped>
