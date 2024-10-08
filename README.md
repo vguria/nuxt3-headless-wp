@@ -1,7 +1,37 @@
-# Nuxt 3 Minimal Starter
+# BELAIR Magazine Headless Client with Nuxt 3
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a version of BELAIR Magazine created in Nuxt3 using Vue, TailwindCSS, and WordPress + GraphQL as a headless CMS backend. This is a proof of concept / ongoing work so there are many features not ready for production.
 
+## Features
+```
+🟢 SSR compatible
+🟢 Light/dark mode styles
+🟢 Styling
+🟢 Homepage
+  🟢 Routing
+  🟢 Layout (Header, footer, main content)
+  🟢 Sections and components
+  🟢 API data retrieval
+🟢 Route [category/post]
+  🟢 Routing
+  🟢 Data retrieval
+  🟠 Data sanitization
+  🟠 Sidebar
+🔴 Route [category]
+  🟢 Routing
+  🔴 Data retrieval
+  🔴 Data sanitization
+  🔴 Sidebar
+🟠 Off-canvas navigation
+  🟢 Basic design and state
+  🔴 Close on keyboard input
+  🔴 Close when clicking out of element
+🟢 Voting favorites
+  🟢 Get votes
+  🟢 Frontent voting
+  🔴 Backend
+  🔴 Local Storage Persistance
+```
 ## Setup
 
 Make sure to install the dependencies:
