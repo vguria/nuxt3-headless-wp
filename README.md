@@ -15,11 +15,11 @@ This is a version of BELAIR Magazine created in Nuxt3 using Vue, TailwindCSS, an
 🟢 Route [category/post]
   🟢 Routing
   🟢 Data retrieval
-  🟠 Data sanitization
-  🟠 Sidebar
+  🔴 Data sanitization
+  🔴 Sidebar
 🔴 Route [category]
   🟢 Routing
-  🔴 Data retrieval
+  🟢  Data retrieval
   🔴 Data sanitization
   🔴 Sidebar
 🟠 Off-canvas navigation
