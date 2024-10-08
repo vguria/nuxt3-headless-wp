@@ -26,7 +26,7 @@
               <NuxtLink to="/">Home</NuxtLink>
             </li>
             <li class="mx-2 py-2 text-sm hover:text-red-900">
-              <NuxtLink to="/noticias-flash">Flash</NuxtLink>
+              <NuxtLink to="/flash">Flash</NuxtLink>
             </li>
             <li class="mx-2 py-2 text-sm hover:text-red-900">
               <NuxtLink to="/belleza">Belleza</NuxtLink>
