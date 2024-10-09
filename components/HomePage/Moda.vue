@@ -8,7 +8,7 @@
         </NuxtLink>
       </div>
       <Voting :post="posts[0]" />
-    </article> 
+    </article>
     <h2 class="text-xl font-bold border-b border-b-black dark:border-zinc-100 
     dark:text-zinc-100">Más noticias de moda</h2>
     <div class="h-96 overflow-x-scroll pr-4">
@@ -55,16 +55,19 @@ const restPosts = computed(() => posts.slice(1))
   filter: brightness(0.8);
   z-index: 0;
 }
+
 .featured:hover img {
   filter: brightness(0.5);
   transform: scale(1.25);
 }
+
 .featured h3 {
   transition: all 0.3s;
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
+
 .featured:hover h3 {
   color: red;
-  text-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 </style>

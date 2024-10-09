@@ -33,7 +33,3 @@ const props = defineProps({
 })
 const excerpt = props.post.excerpt.rendered.slice(3, -111);
 </script>
-
-<style scoped>
-
-</style>

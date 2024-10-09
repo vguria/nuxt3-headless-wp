@@ -1,25 +1,35 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-04-03',
+  compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/robots', '@nuxtjs/color-mode', 'nuxt-schema-org', 'nuxt-aos', 'nuxt-marquee', '@nuxtjs/sitemap', '@nuxt/icon', '@nuxt/fonts'],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxt/image",
+    "@nuxtjs/robots",
+    "@nuxtjs/color-mode",
+    "nuxt-schema-org",
+    "nuxt-aos",
+    "nuxt-marquee",
+    "@nuxtjs/sitemap",
+    "@nuxt/icon",
+    "@nuxt/fonts",
+  ],
   runtimeConfig: {
     public: {
       apiBase: "https://belairmagazine.es/wp-json/wp/v2/",
       siteUrl: "https://belairmagazine.es/",
       graphql: "https://belairmagazine.es/graphql",
       wpJson: "wp-json/wp/v2/",
-
     },
   },
-  css: ['~/assets/css/tailwind.css'],
+  css: ["~/assets/css/tailwind.css"],
   tailwindcss: {
-    cssPath: ['~/assets/css/tailwind.css', {injectPosition: "first"}],
+    cssPath: ["~/assets/css/tailwind.css", { injectPosition: "first" }],
     config: {
       exposeConfig: true,
     },
     viewer: true,
-    configPath: './tailwind.config.js',
+    configPath: "./tailwind.config.js",
     editorSupport: true,
   },
   postcss: {
@@ -34,23 +44,21 @@ export default defineNuxtConfig({
     },
     google: {
       families: {
-        'Alike': [100, 200, 300, 400, 500, 600, 700, 800, 900],
-        'Poppins': [100, 200, 300, 400, 500, 600, 700, 800, 900],
-      }
-    }
+        Alike: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+        Poppins: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      },
+    },
   },
   icon: {
-    serverBundle: 'local', 
-    clientBundle:{
-      icons: [
-        'material-symbols',
-      ]
-    }
+    serverBundle: "local",
+    clientBundle: {
+      icons: ["material-symbols"],
+    },
   },
   colorMode: {
-    preference: 'system',
-    fallback: 'light',
-    storage: 'localStorage',
-    storageKey: 'belair-color-mode',
+    preference: "system",
+    fallback: "light",
+    storage: "localStorage",
+    storageKey: "belair-color-mode",
   },
-})
+});

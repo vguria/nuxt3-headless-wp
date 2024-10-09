@@ -4,14 +4,15 @@
       <div class="container px-12 mx-auto py-4 flex justify-between">
         <div class="grow-0">
           <button class="block" @click="openSidenav">
-            <Icon name="material-symbols:menu" class="text-black text-6xl dark:text-white hover:text-red-600"/>
+            <Icon name="material-symbols:menu" class="text-black text-6xl dark:text-white hover:text-red-600" />
           </button>
         </div>
         <div class="header-main grow-1">
           <NuxtLink to="/">
             <ClientOnly>
               <img class="max-w-[180px]"
-              :src="`${$colorMode.value == 'dark' ? '/img/logo-white.webp': '/img/logo.webp'}`" alt="Belair Magazine" />
+                :src="`${$colorMode.value == 'dark' ? '/img/logo-white.webp' : '/img/logo.webp'}`"
+                alt="Belair Magazine" />
             </ClientOnly>
           </NuxtLink>
         </div>
@@ -48,14 +49,18 @@ const { openSidenav } = useSidenavState();
 </script>
 
 <style scoped>
-.main-nav a{
+.main-nav a {
   transition: all 0.2s ease-in;
   font-family: 'Poppins', sans-serif;
 }
-.v-enter-active, .v-leave-active {
+
+.v-enter-active,
+.v-leave-active {
   transition: transform 0.3s ease;
 }
-.v-enter-from, .v-leave-to {
+
+.v-enter-from,
+.v-leave-to {
   transform: translateX(-100%);
 }
 </style>

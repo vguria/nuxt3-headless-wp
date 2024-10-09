@@ -1,8 +1,7 @@
 <template>
   <div class="flex rounded-lg bg-gray-200 mx-4 px-2 py-2 border border-gray-400
   ">
-    <NuxtImg :src="profilePicture" :alt="name" 
-    class="rounded-full size-16 object-cover border-4" />
+    <NuxtImg :src="profilePicture" :alt="name" class="rounded-full size-16 object-cover border-4" />
     <div class="p-2">
       <h4 class="text-lg font-semibold text-left">
         {{ computedName }}
@@ -31,7 +30,3 @@ const computedDesc = computed(() => {
   return computedProp
 })
 </script>
-
-<style scoped>
-
-</style>

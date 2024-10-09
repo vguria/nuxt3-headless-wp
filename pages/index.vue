@@ -3,7 +3,7 @@
     <section id="headline" class="pt-20 bg-white dark:bg-zinc-900">
       <div class="container mx-auto py-4">
         <HomePageHeadline />
-      </div>     
+      </div>
     </section>
     <section id="belleza" class="dark:bg-zinc-900">
       <div class="container mx-auto py-4">
@@ -18,7 +18,7 @@
         <h2 class="text-zinc-100  text-center text-3xl font-bold">Noticias Flash</h2>
         <HomePageNoticiasFlash />
       </div>
-    </section>        
+    </section>
     <section id="moda" class="dark:bg-zinc-900">
       <div class="container mx-auto py-4">
         <h2 class="text-center text-3xl font-bold dark:text-zinc-100">Moda</h2>
@@ -41,15 +41,15 @@
           <h2 class="text-2xl font-bold border-b border-black dark:border-white 
           pb-2 mb-4 text-zinc-900 dark:text-white">Turismo</h2>
           <HomePageTurismo />
-        </div>        
-      </div>      
+        </div>
+      </div>
     </section>
     <section id="influencers" class="py-8 dark:bg-zinc-900">
       <div class="container mx-auto">
         <h2 class="text-center text-3xl mb-4 font-bold dark:text-zinc-100">Influencers</h2>
         <HomePageInfluencers />
       </div>
-    </section>    
+    </section>
   </div>
 </template>
 
