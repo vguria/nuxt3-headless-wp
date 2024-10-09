@@ -4,7 +4,6 @@ const isSidenavOpen = ref(false);
 const canToggle = ref(true);
 
 const openSidenav = () => {
-  console.log("openSidenav", canToggle.value);
   if (!canToggle.value) return;
   isSidenavOpen.value = true;
   canToggle.value = false;
@@ -12,7 +11,6 @@ const openSidenav = () => {
 };
 
 const closeSidenav = () => {
-  console.log("closeSidenav", canToggle.value);
   if (!canToggle.value) return;
   isSidenavOpen.value = false;
 };

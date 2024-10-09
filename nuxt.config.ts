@@ -61,4 +61,7 @@ export default defineNuxtConfig({
     storage: "localStorage",
     storageKey: "belair-color-mode",
   },
+  plugins: [
+    '~/plugins/dompurify.js',
+  ],
 });

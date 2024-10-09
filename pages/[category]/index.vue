@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="h-[60vh] relative flex flex-column items-end -z-1"
+    <header class="h-80 relative flex flex-column items-end -z-1"
       :style="`background-color: ${category.colorDeCategoria.color};`">
       <img class="absolute w-full h-full object-cover -z-1" :src="`${''}`" />
       <div class="container mx-auto bg-white/50 dark:bg-zinc-900/50 h-32 backdrop-blur-lg px-12 

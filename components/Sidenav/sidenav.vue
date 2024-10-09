@@ -18,7 +18,7 @@
             <SidenavLink to="/" text="Inicio" />
           </li>
           <li>
-            <SidenavLink to="/noticias-flash" text="Noticias Flash" />
+            <SidenavLink to="/flash" text="Noticias Flash" />
           </li>
           <li>
             <SidenavLink to="/belleza" text="Belleza" />
@@ -26,9 +26,20 @@
           <li>
             <SidenavLink to="/moda" text="Moda" />
           </li>
+          <li>
+            <SidenavLink to="/ocio" text="Ocio" />
+          </li>
+          <li>
+            <SidenavLink to="/turismo" text="Turismo" />
+          </li>
+          <li>
+            <SidenavLink to="/gastronomia" text="Gastronomía" />
+          </li>                              
+          <li>
+            <SidenavLink to="/sociedad" text="Sociedad" />
+          </li>                                        
         </ul>
       </nav>
-      <slot />
     </aside>
   </transition>
 </template>
