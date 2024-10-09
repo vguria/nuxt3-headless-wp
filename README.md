@@ -11,6 +11,7 @@ This is a version of BELAIR Magazine created in Nuxt3 using Vue, TailwindCSS, an
 🟢 SSR compatible
 🟢 Light/dark mode styles
 🟢 Styling
+🟠 Responsive Styles
 🟢 Homepage
   🟢 Routing
   🟢 Layout (Header, footer, main content)
@@ -26,9 +27,9 @@ This is a version of BELAIR Magazine created in Nuxt3 using Vue, TailwindCSS, an
   🟢 Data retrieval
   🟢 Data sanitization
   🔴 Sidebar
-🟠 Off-canvas navigation
+🟢 Off-canvas navigation
   🟢 Basic design and state
-  🔴 Close on keyboard input
+  🟢 Close on keyboard input
   🟢 Close when clicking out of element
 🟠 Voting favorites
   🟢 Get votes
