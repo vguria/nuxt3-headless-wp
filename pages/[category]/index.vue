@@ -10,17 +10,18 @@
     </header>
     <div class="post-body w-full container mx-auto flex">
       <section class="p-12 bg-gray-100 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100 flex-grow">
-        <NuxtLink :to="`${category.slug}/${post.slug}`"
-          class="article rounded-xl w-full mx-auto relative my-4 h-56 overflow-hidden">
-          <article v-for="post in category.posts.nodes" :key="post.id">
+        
+        <article v-for="post in category.posts.nodes" :key="post.id"
+        class="article rounded-xl w-full mx-auto relative my-4 h-56 overflow-hidden">
+          <NuxtLink :to="{name: 'category-slug', params: {slug: post.slug}}">
             <img :src="post.featuredImage.node.sourceUrl" alt="" class=" 
         absolute z-0 aspect-video object-cover">
             <h3 class="absolute z-1 text-3xl font-bold bottom-0 m-4 text-white dark:text-white">
               {{ post.title }}
             </h3>
             <Voting :post="post" />
-          </article>
-        </NuxtLink>
+          </NuxtLink>
+        </article>
       </section>
       <aside class="p-12 bg-zinc-200 z-2">
         <h2 class="text-2xl font-bold border-b border-black dark:border-zinc-100 
