@@ -35,7 +35,6 @@
 <script setup>
 import { useSidenavState } from '~/composables/sidenavState';
 const { isSidenavOpen, closeSidenav } = useSidenavState();
-console.log(isSidenavOpen);
 </script>
 
 <style scoped>
