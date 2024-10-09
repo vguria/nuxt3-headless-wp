@@ -64,6 +64,7 @@ const restPosts = computed(() => posts.slice(1))
   text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 }
 .featured:hover h3 {
+  color: red;
   text-shadow: 4px 4px 4px rgba(0,0,0,0.5);
 }
 </style>

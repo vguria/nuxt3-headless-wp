@@ -14,7 +14,9 @@
         class="article rounded-xl w-full mx-auto relative my-4 h-56 overflow-hidden">
           <img :src="post.featuredImage.node.sourceUrl" alt="" class=" 
         absolute z-0 aspect-video object-cover">
-          <h3 class="absolute z-1 text-3xl font-bold bottom-0 m-4">{{ post.title }}</h3>
+          <h3 class="absolute z-1 text-3xl font-bold bottom-0 m-4 text-white dark:text-white">
+            {{ post.title }}
+          </h3>
           <Voting :post="post" />
         </article>
       </section>
