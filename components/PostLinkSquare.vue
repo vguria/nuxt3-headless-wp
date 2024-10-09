@@ -7,7 +7,6 @@
             <h2 class="text-base text-gray-800 dark:text-zinc-300 leading-5 font-semibold">{{ post.title }}</h2>
           </div>
         </NuxtLink>
-        <Voting :post="post"/>
       </article>
 </template>
 
