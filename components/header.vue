@@ -4,7 +4,7 @@
       <div class="container px-12 mx-auto py-4 flex justify-between">
         <div class="grow-0">
           <button class="block" @click="openSidenav">
-            <Icon name="material-symbols:menu" class="text-black text-6xl dark:text-white"/>
+            <Icon name="material-symbols:menu" class="text-black text-6xl dark:text-white hover:text-red-600"/>
           </button>
         </div>
         <div class="header-main grow-1">

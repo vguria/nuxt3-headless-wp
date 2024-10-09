@@ -41,7 +41,6 @@ const toggleUpVoted = () => {
   }
 }
 watch(votedPosts, (newVotedPosts) => {
-  console.log(`${props.post.title} ${isVotedPost(props.post.id)}`)
   upVoted.value = isVotedPost(props.post.id)
   votes.value = parseInt(props.post.snaxFakeVoteCount) + (upVoted.value ? 1 : 0)
 }, { deep: true })
