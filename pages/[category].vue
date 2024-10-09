@@ -48,6 +48,7 @@ const q = `
     description
     id
     name
+    slug
     colorDeCategoria {
       color
     }    
