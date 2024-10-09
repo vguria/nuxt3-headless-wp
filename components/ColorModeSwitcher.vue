@@ -9,6 +9,14 @@
       @click="$colorMode.preference = 'light'">
         <Icon name="material-symbols:wb-sunny" class="text-white text-6xl hover:text-red-600"/>
       </button>
+      <button class="text-black" v-show="$colorMode.preference === 'system' && $colorMode.value === 'light'" 
+      @click="$colorMode.preference = 'dark'">
+      <Icon name="material-symbols:nightlight-outline" class="text-black text-6xl"/>
+      </button>      
+      <button class="text-white" v-show="$colorMode.preference === 'system' && $colorMode.value === 'dark'"
+      @click="$colorMode.preference = 'light'">
+        <Icon name="material-symbols:wb-sunny" class="text-white text-6xl hover:text-red-600"/>
+      </button>      
   </ClientOnly>    
   </div>
 </template>

@@ -4,8 +4,9 @@
      dark:bg-black w-64 px-0 py-0 t0 l0 z-20" v-click-outside="closeSidenav">
       <div class="sidenav-header bg-gray-400 dark:bg-gray-800 py-2 px-4 dark:text-white">
         <ClientOnly>
-          <img :src="`${$colorMode.preference === 'dark' ? '/img/logo-white-no-tagline.webp': '/img/logo-no-tagline.webp'}`" 
-          alt="BelAir Magazine">
+          <img
+            :src="`${$colorMode.preference === 'dark' ? '/img/logo-white-no-tagline.webp' : '/img/logo-no-tagline.webp'}`"
+            alt="BelAir Magazine">
         </ClientOnly>
       </div>
       <nav id="sidenav-main" class="p-4">
@@ -38,10 +39,13 @@ const { isSidenavOpen, closeSidenav } = useSidenavState();
 </script>
 
 <style scoped>
-.v-enter-active, .v-leave-active {
+.v-enter-active,
+.v-leave-active {
   transition: transform 0.3s ease;
 }
-.v-enter-from, .v-leave-to {
+
+.v-enter-from,
+.v-leave-to {
   transform: translateX(-100%);
 }
 </style>

@@ -44,7 +44,7 @@
 <script setup>
 import { useSidenavState } from '~/composables/sidenavState';
 
-const { isSidenavOpen, openSidenav } = useSidenavState();
+const { openSidenav } = useSidenavState();
 </script>
 
 <style scoped>
