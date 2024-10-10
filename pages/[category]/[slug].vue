@@ -9,12 +9,12 @@
       </div>
     </header>
     <div class="post-body container mx-auto flex">
-      <article class="p-12 bg-gray-100 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100 z-2">
-        <div v-html="$sanitizeHTML(post.content)" class="text-xl dark:text-zinc-300"></div>
+      <article class="p-12 bg-gray-100 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100 z-2 basis-8/12">
+        <div v-html="$sanitizeHTML(post.content)" class="text-lg dark:text-zinc-300"></div>
       </article>
-      <aside class="p-12 bg-zinc-200 z-2">
+      <aside class="sidebar px-4 py-10 m-0 bg-zinc-200 dark:bg-zinc-950 basis-4/12 z-2">
         <h2 class="text-2xl font-bold border-b border-black dark:border-zinc-100 
-        dark:text-zinc-100">Más noticias de {{ post.categories.nodes[0].name }}</h2>
+        dark:text-zinc-100 py-2">Más en {{ post.categories.nodes[0].name }}</h2>
       </aside>
     </div>
   </div>

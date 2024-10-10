@@ -3,14 +3,13 @@
     <header class="h-80 relative flex flex-column items-end -z-1"
       :style="`background-color: ${category.colorDeCategoria.color};`">
       <img class="absolute w-full h-full object-cover -z-1" :src="`${''}`" />
-      <div class="container mx-auto bg-white/50 dark:bg-zinc-900/50 h-32 backdrop-blur-lg px-12 
+      <div class="container mx-auto bg-white/50 dark:bg-zinc-900/50 h-24 backdrop-blur-lg px-12 
       flex flex-col justify-center rounded-t-3xl">
-        <h1 class="text-4xl font-bold dark:text-zinc-100">Posts de {{ category.name }}</h1>
+        <h1 class="text-2xl font-bold dark:text-zinc-100">Posts de {{ category.name }} en BELAIR</h1>
       </div>
     </header>
     <div class="post-body w-full container mx-auto flex">
-      <section class="p-12 bg-gray-100 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100 flex-grow">
-        
+      <section class="p-12 bg-gray-100 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100 basis-8/12">
         <article v-for="post in category.posts.nodes" :key="post.id"
         class="article rounded-xl w-full mx-auto relative my-4 h-56 overflow-hidden">
           <NuxtLink :to="{name: 'category-slug', params: {slug: post.slug}}">
@@ -23,9 +22,9 @@
           </NuxtLink>
         </article>
       </section>
-      <aside class="p-12 bg-zinc-200 z-2">
+      <aside class="sidebar p-12 bg-zinc-200 z-2 basis-4/12">
         <h2 class="text-2xl font-bold border-b border-black dark:border-zinc-100 
-        dark:text-zinc-100">Más noticias de </h2>
+        dark:text-zinc-100">Más en {{ category.name }} </h2>
       </aside>
     </div>
   </div>
